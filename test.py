@@ -1,3 +1,3 @@
 print('hi')
 print('hiagain')
-print('hiagain2')
+# 삭제
