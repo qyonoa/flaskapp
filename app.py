@@ -5,9 +5,39 @@ import os
 import json
 import time
 from datetime import datetime
+from apscheduler.schedulers.background import BackgroundScheduler
+import requests
 
 app = Flask(__name__)
 root = os.getcwd()
+
+
+
+# Flask 서버가 실행 중인 URL을 설정하세요 (자신의 Render URL)
+YOUR_SERVER_URL = "https://renderflaskapp-du1u.onrender.com/#service"
+
+# 스케줄러 설정
+scheduler = BackgroundScheduler()
+
+def send_keep_alive_request():
+    try:
+        # 서버에 요청을 보냄
+        response = requests.get(YOUR_SERVER_URL)
+        print(f"Keep-alive 요청 전송: {response.status_code}")
+    except Exception as e:
+        print(f"서버에 요청 실패: {e}")
+
+# 일정 주기로 작업을 실행 (5분마다)
+scheduler.add_job(func=send_keep_alive_request, trigger="interval", minutes=10)
+scheduler.start()
+
+
+# 애플리케이션 종료 시 스케줄러도 정지
+@app.before_first_request
+def init_scheduler():
+    scheduler.start()
+
+
 
 app.secret_key = "asdlkjf!@Kjsa"
 @app.route('/')
