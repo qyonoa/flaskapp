@@ -1,14 +1,12 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, jsonify
-# import mysql.connector
+import mysql.connector
 from werkzeug.utils import secure_filename
 import os
 import json
 import time
 from datetime import datetime
 
-
 app = Flask(__name__)
-root = os.getcwd() + "/mysite"
 root = os.getcwd()
 
 app.secret_key = "asdlkjf!@Kjsa"

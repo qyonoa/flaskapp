@@ -30,8 +30,10 @@
 html,
 body {
   height: 100%;
+  background-color:#100028;
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+
 }
 
 h1,
@@ -589,13 +591,25 @@ background-position: -24px -53px;
 }
 
 /*---------------------
-  Work
+  promise
+-----------------------*/
+.promise {
+  overflow: hidden;
+  background: #100028;
+}
+
+.faq {
+  overflow: hidden;
+  background: #100028;
+}
+
+/*---------------------
+  work
 -----------------------*/
 .work {
   overflow: hidden;
   background: #100028;
 }
-
 .work__gallery {
   margin-right: -10px;
 }
@@ -688,6 +702,7 @@ background-position: -24px -53px;
 /* 갤러리 컨테이너 */
 .gallery {
     display: flex;
+    width: 90%;
     flex-wrap: wrap;
     gap: 10px; /* 이미지 간의 간격 */
     padding: 20px;
@@ -721,11 +736,18 @@ background-position: -24px -53px;
     .gallery a {
         flex-basis: calc(50% - 10px); /* 작은 화면에서는 2열로 구성 */
     }
+    .gallery a.character {
+      flex-basis: calc(25% - 10px); /* 작은 화면에서는 2열로 구성 */
+    }
+
 }
 
 @media (max-width: 800px) {
     .gallery a {
         flex-basis: 100%; /* 더 작은 화면에서는 1열로 구성 */
+    }
+    .gallery a.character {
+      flex-basis: calc(33.333% - 10px); /* 작은 화면에서는 2열로 구성 */
     }
 }
 
@@ -1073,8 +1095,6 @@ background-position: -24px -53px;
   background: #0a0119;
 
 }
-
-
 .footer__top {
   padding: 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1083,22 +1103,29 @@ background-position: -24px -53px;
 .footer__top__logo a {
   display: inline-block;
 }
+.footer__top__logo p {
+  margin-left: 40px;
+}
 
 .footer__top__contact{
-
   color: white;
-  padding-bottom: 20px;
-  padding-left: 50px;
   position: fixed;
-  bottom: 0;
+  right: 200px;
+  bottom: 25px;
+  padding: 20px;
 }
-.footer__top__right {
-  text-align: center;
+.footer__top__contact a {
+  border-radius: 0px;
 }
-.footer__top__right p{
+
+/* 반응형 처리 */
+@media (max-width: 1200px) {
+  .footer__top__contact {
+    right: 100px;
+
+  }
+
   
-  margin: 5px 0 0px 0;
-  color: #ffffff;
 }
 
 .footer__option__item {
@@ -1328,8 +1355,10 @@ background-position: -24px -53px;
 -----------------------*/
 .services {
   background: #100028;
-  padding-bottom: 60px;
-  padding-top: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 30px;
 }
 
 .services__title p {
@@ -1986,6 +2015,7 @@ background-position: -24px -53px;
     max-width: 1170px;
   }
 }
+
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__nav__menu {
