@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="VizFlux Template">
+    <meta name="keywords" content="VizFlux, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/img/favicon.webp">
+    <title>VizFlux :: Visual Art Solution</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+    <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <!-- <a class="navbar-brand" href={{url_for('index_kor')}}>VizFlux<span>.</span></a> -->
+
+                        <a href={{url_for('index_kor')}}><img src="../static/img/logo.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href={{url_for('index_kor')}}>Home</a></li>
+                                <li><a href={{url_for('about_kor')}}>About</a></li>
+                                <li><a href={{url_for('portfolio_architecture')}}>Portfolio</a>
+                                    <ul class="dropdown">
+                                        <li><a href={{url_for('portfolio_architecture')}}>Architecture</a></li>
+                                        <li><a href={{url_for('portfolio_environment')}}>Environment</a></li>
+                                        <li><a href={{url_for('portfolio_character')}}>Character</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href={{url_for('service_kor')}}>Service</a></li>
+                                <li><a href={{url_for('contact_kor')}}>Contact</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href={{url_for('index_kor')}} class="checked">KOR</a>
+                            <a href={{url_for('index_en')}}>EN</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="../static/img/hero/hero-1.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>For Game and Archi-Viz</span>
+                                <h2>Visual Art<br>Design Studio</h2>
+                                <a href="../templates/portfolio_kor.html" class="primary-btn">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="../static/img/hero/hero-2.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>For website and video editing</span>
+                                <h2>Realtime Architecture Visualization</h2>
+                                <a href="#" class="primary-btn">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="../static/img/hero/hero-3.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>For website and video editing</span>
+                                <h2>VizFluxer’s Portfolio</h2>
+                                <a href="#" class="primary-btn">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What We do?</h2>
+                        </div>
+                        <p>If you hire a VizFluxer of our team you will get a video professional to make a custom
+                            video for your business and, once the project is over.</p>
+                        <a href="#" class="primary-btn">View all services</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="../static/img/icons/si-1.png" alt="">
+                                </div>
+                                <h4>Game Art</h4>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="../static/img/icons/si-2.png" alt="">
+                                </div>
+                                <h4>Architecture</h4>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="../static/img/icons/si-3.png" alt="">
+                                </div>
+                                <h4>VFX</h4>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="../static/img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>Archi-Viz</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery" data-aos="fade-up">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="../static/img/portfolio/interior_Lobby01.jpg">
+                        <a href="../static/img/portfolio/interior_Lobby01.jpg" class="image-popup">
+                            <img src="../static/img/portfolio/interior_Lobby01.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                        </a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="../static/img/portfolio/interior_Lobby02.jpg">
+                <a href="../static/img/portfolio/interior_Lobby02.jpg" class="image-popup">
+                    <img src="../static/img/portfolio/interior_Lobby02.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                </a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="../static/img/portfolio/interior_Lobby03.jpg">
+                <a href="../static/img/portfolio/interior_Lobby03.jpg" class="image-popup">
+                    <img src="../static/img/portfolio/interior_Lobby03.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                </a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="../static/img/portfolio/interior_Lobby04.jpg">
+                <a href="../static/img/portfolio/interior_Lobby04.jpg" class="image-popup">
+                    <img src="../static/img/portfolio/interior_Lobby04.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                </a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="../static/img/portfolio/interior_Lobby05.jpg">
+                <a href="../static/img/portfolio/interior_Lobby05.jpg" class="image-popup">
+                    <img src="../static/img/portfolio/interior_Lobby05.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                </a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg">
+                <a href="../static/img/portfolio/interior_Lobby06.jpg" class="image-popup">
+                    <img src="../static/img/portfolio/interior_Lobby06.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                </a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item wide__item set-bg">
+                <a href="../static/img/portfolio/interior_Lobby07.jpg" class="image-popup">
+                    <img src="../static/img/portfolio/interior_Lobby07.jpg" class="img-fluid bg_image" loading="lazy" alt="">
+                </a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 영상버튼 달려있는 버전 백업
+            <div class="work__item wide__item set-bg" data-setbg="../static/img/portfolio/bg_7.jpg">
+                <a href="https://www.youtube.com/watch?v=jAz4Lb93gwY" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+
+
+    <!-- Logo Begin -->
+    <div class="logo spad" >
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Our Partners</h2>
+            </div>
+            <div class="logo__carousel owl-carousel">
+                <a href="#" class="logo__item"><img src="../static/img/logo/logo-1.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="../static/img/logo/logo-2.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="../static/img/logo/logo-3.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="../static/img/logo/logo-4.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="../static/img/logo/logo-5.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="../static/img/logo/logo-6.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- Logo End -->
+    
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="../static/img/callto-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
+                        <p>INC5000, Best places to work 2019</p>
+                        <a href="#">Start your Idea</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="../static/img/logo.webp" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About us</h5>
+                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, VizFluxis an award-winning, full-service
+                                production company specializing.</p>
+                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Who we are</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Our work</h5>
+                            <ul>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Latest</a></li>
+                                <li><a href="#">Browse Archive</a></li>
+                                <li><a href="#">Video for web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>VizFluxis an award-winning, full-service production company specializing.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/mixitup.min.js"></script>
+    <script src="../static/js/masonry.pkgd.min.js"></script>
+    <script src="../static/js/jquery.slicknav.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/magnific-popup-options.js"></script>
+    <script src="../static/vendor/aos/aos.js"></script>
+
+    <script src="../static/js/main.js"></script>
+    <!-- Google Maps --> 
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script> -->
+</body>
+
+</html>

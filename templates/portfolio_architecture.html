@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="VizFlux Template">
+    <meta name="keywords" content="VizFlux, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/img/favicon.webp">
+    <title>VizFlux :: Visual Art Solution</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
+
+
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+</head>
+
+<body oncontextmenu="return false">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+
+                        <a href='/'><img src="../static/img/logo.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="home"><a href="/">Home</a></li>
+                                <li class='about'><a class='active' href="/#about">About</a></li>
+                                <li class='service'><a href="/#service">Service</a></li>
+                                <li class="active"><a href='/portfolio_architecture'>Portfolio</a>
+                                    <ul class="dropdown">
+                                        <li><a href='/portfolio_architecture'>Architecture</a></li>
+                                        <li><a href='/portfolio_environment'>Environment</a></li>
+                                        <li><a href='/portfolio_character'>Character</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='/contact_kor'>Contact</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href='/' class="checked">KOR</a>
+                            <a href='/index_en'>ENG</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="https://i.ibb.co/K94hpFy/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>PORTFOLIO</h2>
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href='/portfolio_architecture'>Architecture</a></li>
+                                <li><a href='/portfolio_environment'>Environment</a></li>
+                                <li><a href='/portfolio_character'>Character</a></li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Portfolio Section Begin -->
+    <section class="work">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="portfolio__filter">
+                    {% if subCategory == 'exterior' %}
+                    {% set exterior = 'active' %}
+                    {% elif subCategory == 'interior' %}
+                    {% set interior = 'active' %}
+                    {% else %}
+                    {% set all = 'active' %}
+                    {% endif %}
+                    <li class={{all}}><a href={{url_for('reload_portfolio', category="architecture-all")}}>All</a></li>
+                    <li class={{exterior}}><a href={{url_for('reload_portfolio', category="architecture-exterior")}}>Exterior</a></li>
+                    <li class={{interior}}><a href={{url_for('reload_portfolio', category="architecture-interior")}}>Interior</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gallery">
+            {% for imgSrc in imgSrcList %}
+            {% set imgSrc=imgSrc %}
+            <a href={{imgSrc}} class="image-popup branding">
+                <img src={{imgSrc}} loading="lazy" alt="">
+            </a>
+            {% endfor %}
+           
+          
+        </div>
+
+
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__top">
+
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="../static/img/logo.webp" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__right">
+                            <p>© VizFlux All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer__top__contact">
+                            <a href='/contact_kor' class="primary-btn">문의하기</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/mixitup.min.js"></script>
+    <script src="../static/js/masonry.pkgd.min.js"></script>
+    <script src="../static/js/magnific-popup-options.js"></script>
+    <script src="../static/js/jquery.slicknav.js"></script>
+
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="VizFlux Template">
+    <meta name="keywords" content="VizFlux, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/img/favicon.webp">
+    <title>VizFlux :: Visual Art Solution</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css"> -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../static/css/magnific-popup.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css"> -->
+
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+</head>
+
+<body oncontextmenu="return false">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+
+                        <a href='/'><img src="../static/img/logo.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="home"><a href="/">Home</a></li>
+                                <li class='about'><a class='active' href="/#about">About</a></li>
+                                <li class='service'><a href="/#service">Service</a></li>
+                                <li><a href='/portfolio_architecture'>Portfolio</a>
+                                    <ul class="dropdown">
+                                        <li><a href='/portfolio_architecture'>Architecture</a></li>
+                                        <li><a href='/portfolio_environment'>Environment</a></li>
+                                        <li><a href='/portfolio_character'>Character</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active"><a href='/contact_kor'>Contact</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href='/' class="checked">KOR</a>
+                            <a href='/index_en'>ENG</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="https://i.ibb.co/K94hpFy/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>VizFlux와 함께 새로운 가능성을 열어보세요</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Contact Widget Section Begin -->
+    <section class="contact-widget spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Address</h4>
+                            <p>서울특별시 강남구 테헤란로 70길</p>
+                        </div>
+                    </div>
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Hotline</h4>
+                            <p>010-9796-8584 • 02-9796-8584</p>
+                        </div>
+                    </div>
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Email</h4>
+                            <p>Support@vizflux.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__form">
+                        <form id='emailForm' class="gform" action="https://script.google.com/macros/s/AKfycbyG_ModAoFQxq3BnOKjts0N9GPHVGK5sMiOeEyeu8nRruhE6dJE67NgrVBaOybSYxUU/exec" method="POST" data-email="niceforyou15@naver.com">
+                            <input type="text" name='name' placeholder="이름" required autocomplete='off'>
+                            <input type="text" name='email' placeholder="이메일" autocomplete='off'>
+                            <input type="text" name='phone' placeholder="연락처" required autocomplete='off'>
+                            <textarea name='message' placeholder="문의사항을 입력해주세요" required autocomplete='off'></textarea>
+                            <button type="submit" class="site-btn" onclick=check()>전송하기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/mixitup.min.js"></script>
+    <script src="../static/js/masonry.pkgd.min.js"></script>
+    <script src="../static/js/jquery.slicknav.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/form-submission-handler.js"></script>
+</body>
+
+</html>
