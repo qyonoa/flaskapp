@@ -31,11 +31,6 @@ scheduler.add_job(func=send_keep_alive_request, trigger="interval", minutes=10)
 scheduler.start()
 
 
-# 애플리케이션 종료 시 스케줄러도 정지
-@app.before_first_request
-def init_scheduler():
-    scheduler.start()
-
 
 
 app.secret_key = "asdlkjf!@Kjsa"
