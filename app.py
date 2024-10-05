@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, jsonify
-import mysql.connector
 from werkzeug.utils import secure_filename
 import os
 import json
